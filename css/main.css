@@ -9,6 +9,8 @@
 
 body {
     background-color: var(--background-color);
+    padding-bottom: 2rem;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -84,18 +86,18 @@ body {
     height: 50vh;
 }
 
-.container-clothes {
+.container {
     font-family: var(--secondary-font);
     padding: 1rem 6rem 0rem 6rem;
     background-color: var(--background-color);
 }
 
-.title-clothes {
+.title {
     text-align: center;
     font-size: 4rem;
 }
 
-.images-clothes {
+.container-clothes {
     display: grid;
     grid-template-areas:
         "image-2 image-3 image-1"
@@ -152,4 +154,102 @@ body {
 
 .image-c:nth-child(5)  {
     grid-area: image-5;
+}
+
+.container-accesory img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid var(--black);
+}
+
+.text-accesory {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    font-family: var(--primary-font);
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.container-accesory{
+    margin-top: 2rem;
+    position: relative;
+} 
+
+.container-cellphones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.images-cellphone{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.images-cellphone img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.card-cellphone{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding-bottom: 1rem;
+}
+
+.body-card-phone{
+    font-family: var(--primary-font);
+}
+
+.body-card-phone h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text-price{
+    padding-left: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.text-price .price{
+    color: #981c25;
+}
+
+.text-price .desc-cellphone{
+    color: var(--black);
+    background-color: var(--secondary-color);
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-price .price-after{
+    font-style:initial;
+    text-decoration: line-through;
+    color: rgb(128, 128, 128);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 5vh;
+}
+
+.buttons button{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 90%;
+    padding: 3px 2rem 3px 2rem;
+    background-color: var(--primary-color);
+    color:var(--white)
 }
