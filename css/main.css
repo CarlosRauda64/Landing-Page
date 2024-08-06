@@ -274,16 +274,13 @@ body {
     padding: 2rem;
     text-align: center;
     font-family: var(--primary-font);
-}
-
-.social-media{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-section:nth-child(1){
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -291,12 +288,11 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 1rem;
+    flex-direction: column;
     gap: 1rem;
 }
 
-.text-social-media{
+.img-social-media{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    gap: 1rem;
 }
