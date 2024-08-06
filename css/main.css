@@ -6,16 +6,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+
+body {
+    background-color: var(--background-color);
+}
+
+:root {
     --primary-font: "Assistant", sans-serif;
     --secondary-font: "Anton", sans-serif;
     --primary-color: #981c25;
-    --secondary-color: #fecace;
+    --secondary-color: #ee4552;
+    --third-color: #fecace;
+    --background-color: #d3cce3;
     --black: black;
     --white: #ffff;
 }
 
-.navbar{
+.navbar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 10vh;
@@ -24,20 +31,124 @@
     height: 10vh;
     font-family: var(--primary-font);
     border-radius: 0px 0px 10px 10px;
+    position: sticky;
+    top: 0;
 }
 
-.siman-image{
+.siman-image {
     width: 40%;
     height: 100%;
     object-fit: cover;
     padding-left: 12px;
 }
 
-.options-navbar{
+.options-navbar {
     display: flex;
     padding-right: 5rem;
     justify-content: flex-end;
     gap: 2rem;
     font-weight: 600;
     color: var(--white);
+}
+
+.start {
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.background {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.siman-background {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.slogan {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    color: var(--secondary-color);
+    height: 50vh;
+}
+
+.container-clothes {
+    font-family: var(--secondary-font);
+    padding: 1rem 6rem 0rem 6rem;
+    background-color: var(--background-color);
+}
+
+.title-clothes {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.images-clothes {
+    display: grid;
+    grid-template-areas:
+        "image-2 image-3 image-1"
+        "image-4 image-5 image-1"
+    ;
+    gap: 1rem;
+}
+
+.image-c{
+    position: relative;
+    font-family: var(--primary-font);
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.image-c img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid var(--black);
+}
+
+.image-c .text-1{
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.image-c .text{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.image-c-1 {
+    grid-area: image-1;
+}
+
+.image-c-2 {
+    grid-area: image-2;
+}
+
+.image-c-3 {
+    grid-area: image-3;
+}
+
+.image-c-4 {
+    grid-area: image-4;
+}
+
+.image-c-5 {
+    grid-area: image-5;
 }
