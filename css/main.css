@@ -33,6 +33,7 @@ body {
     border-radius: 0px 0px 10px 10px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .siman-image {
@@ -133,22 +134,22 @@ body {
     transform: translate(-50%,-50%);
 }
 
-.image-c-1 {
+.image-c:nth-child(1) {
     grid-area: image-1;
 }
 
-.image-c-2 {
+.image-c:nth-child(2)  {
     grid-area: image-2;
 }
 
-.image-c-3 {
+.image-c:nth-child(3)  {
     grid-area: image-3;
 }
 
-.image-c-4 {
+.image-c:nth-child(4)  {
     grid-area: image-4;
 }
 
-.image-c-5 {
+.image-c:nth-child(5)  {
     grid-area: image-5;
 }
