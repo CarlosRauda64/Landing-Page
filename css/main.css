@@ -74,7 +74,6 @@ body {
     width: 50%;
     height: 50%;
     object-fit: contain;
-    opacity: 100%;
 }
 
 .slogan {
@@ -295,4 +294,219 @@ body {
 .img-social-media{
     display: flex;
     gap: 1rem;
+}
+
+/* Mediaquery for smartphone */
+@media (min-width: 320px) and (max-width: 480px){
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        height: 10vh;
+        border-radius: 0px 0px 5px 5px;
+        z-index: 1;
+    }
+    
+    .siman-image {
+        width: 90%;
+        height: 100%;
+    }
+    
+    .options-navbar {
+        display: flex;
+        padding-right: 20px;
+        align-items: center;
+        gap: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .container {
+        font-family: var(--secondary-font);
+        padding: 2px 10px 0px 10px;
+        background-color: var(--background-color);
+    }
+
+    .slogan {
+        font-size: 20px;
+        height: 50vh;
+    }
+
+    .siman-background {
+        width: 70%;
+        height: 60%;
+        object-fit: contain;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .container-clothes {
+        display: grid;
+        grid-template-areas:
+            "image-2 image-1"
+            "image-3 image-1"
+            "image-4 image-5"
+        ;
+        gap: 1rem;
+    }
+
+    .image-c img {
+        border: 2px solid var(--black);
+    }
+    
+    .image-c{
+        position: relative;
+        font-family: var(--primary-font);
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--white);
+    }
+
+    .container-accesory img{
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+        border-radius: 12px;
+        border: 2px solid var(--black);
+    }
+    
+    .text-accesory {
+        position: absolute;
+        top: 85%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+        font-family: var(--primary-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: var(--white);
+    }
+    
+    .container-accesory{
+        margin-top: 2rem;
+        position: relative;
+        margin-bottom: 2rem;
+    } 
+    
+
+    .container-cellphones{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .images-cellphone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+    
+    .images-cellphone img{
+        width: 75%;
+        height: 75%;
+        object-fit: cover;
+    }
+    
+    .card-cellphone{
+        background-color: var(--white);
+        border-radius: 12px;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .body-card-phone{
+        font-family: var(--primary-font);
+        font-size: 12px;
+    }
+    
+    .body-card-phone h2{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .text-price{
+        padding-left: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .text-price .price{
+        color: #981c25;
+    }
+    
+    .text-price .desc-cellphone{
+        color: var(--black);
+        background-color: var(--secondary-color);
+        padding: 3px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .text-price .price-after{
+        font-style:initial;
+        text-decoration: line-through;
+        color: rgb(128, 128, 128);
+    }
+    
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 5vh;
+    }
+    
+    .buttons button{
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 90%;
+        padding: 3px 2rem 3px 2rem;
+        background-color: var(--primary-color);
+        color:var(--white)
+    }
+
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px;
+        padding: 1rem;
+    }
+
+    .footer-section:nth-child(1) img{
+        height: 50%;
+        width: 60%;
+        object-fit: cover;
+    }
+    .footer-section:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 5px;
+    }
+
+    .img-social-media{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .img-social-media img{
+        width: 20%;
+        height: 50%;
+        object-fit: cover;
+    }
 }
