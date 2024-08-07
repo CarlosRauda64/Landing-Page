@@ -49,8 +49,12 @@ body {
     padding-right: 5rem;
     justify-content: flex-end;
     gap: 2rem;
+}
+
+.options-navbar .text{
     font-weight: 600;
     color: var(--white);
+    text-decoration: none;
 }
 
 .start {
