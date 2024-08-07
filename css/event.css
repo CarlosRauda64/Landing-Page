@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200..800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +17,7 @@ body {
     --primary-color: #981c25;
     --secondary-color: #ee4552;
     --third-color: #fecace;
-    --background-color: #d3cce3;
+    --background-color: #fee2e4;
     --black: black;
     --white: #ffff;
 }
@@ -54,6 +56,127 @@ body {
     text-decoration: none;
 }
 
+.content-event{
+    font-family: var(--primary-font);
+    padding: 4rem 3rem 0rem 3rem;
+}
+
+.text-event{
+    text-align: justify;
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.title{
+    font-family: var(--primary-font);
+    font-size: 5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.images-event{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    margin-top: 1rem;
+}
+
+.images-event img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.title-about{
+    font-family: var(--primary-font);
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+
+.about-event{
+    padding: 2rem 3rem 0rem 3rem;
+}
+
+.card-body{
+    margin-bottom: 10rem;
+}
+
+.card-body img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.text-card{
+    text-align: justify;
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+}
+
+.cards-event{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0rem 4rem 0rem;
+}
+
+.images-about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.images-about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+
+.images-about img:nth-child(2){
+    margin-top: 2rem;
+}
+
+.text-about{
+    text-align: justify;
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+}
+
+.event-end{
+    padding: 2rem 3rem 0rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.event-end img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10rem;
+}
 
 
 .container-footer{
