@@ -55,6 +55,7 @@ body {
     font-weight: 600;
     color: var(--white);
     text-decoration: none;
+    font-size: 24px;
 }
 
 .start {
@@ -316,13 +317,20 @@ body {
         width: 90%;
         height: 100%;
     }
-    
+
     .options-navbar {
         display: flex;
-        padding-right: 20px;
+        padding-right: 1rem;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+    
+    .options-navbar .text{
+        display: flex;
+        padding-right: 0px;
         align-items: center;
-        gap: 20px;
-        font-size: 12px;
+        justify-content: flex-end;
+        font-size: 15px;
         text-align: center;
     }
 
