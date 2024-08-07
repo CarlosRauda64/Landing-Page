@@ -249,20 +249,18 @@ body {
     .text-event{
         text-align: justify;
         font-size: 17px;
-        color: var(--primary-color);
         font-weight: 500;
     }
     
     .title{
-        font-family: var(--primary-font);
         font-size: 2rem;
-        color: var(--secondary-color);
         margin-bottom: 1rem;
     }
     
     .images-event{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         gap: 1px;
         margin-top: 1rem;
     }
@@ -274,7 +272,67 @@ body {
         border-radius: 12px;
     }
 
+    .title-about{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about-event{
+        padding: 2rem 1rem 0rem 1rem;
+    }
+    
+    .card-body{
+        margin-bottom: 3rem;
+    }
+    
+    .card-body img{
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    
+    .text-card{
+        font-size: 17px;
+        font-weight: 500;;
+    }
+    
+    .cards-event{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .about{
+        display: flex;
+        align-items: center;
+        flex-direction:column-reverse;
+        gap: 1rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    
+    .text-about{
+        text-align: justify;
+        font-size: 18px;
+        color: var(--primary-color);
+        font-weight: 500;
+        font-family: var(--primary-font);
+        display: flex;
+        align-items: center;
+    }
 
+    .event-end{
+        padding: 2rem 1rem 0rem 1rem;
+    }
+    
+    .event-end img{
+        width: 75%;
+        height: 75%;
+        object-fit: cover;
+        border-radius: 10rem;
+    }
+
+    /* footer */
     .container-footer{
         display: flex;
         justify-content: center;
